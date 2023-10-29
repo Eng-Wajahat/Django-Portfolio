@@ -27,9 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-EMAIL_HOST = 'smtp.mailtrap.io'
-EMAIL_HOST_USER = '0e30e8a524ec9f'
-EMAIL_HOST_PASSWORD = 'efda6a3a1dc857'
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = 'cab2d94de7294b'
+EMAIL_HOST_PASSWORD = '8f98eb4f429abd'
 EMAIL_PORT = '2525'
 
 # Application definition

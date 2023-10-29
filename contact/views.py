@@ -11,15 +11,22 @@ def index(request):
         if form.is_valid():
             name = form.cleaned_data['name']
             email = form.cleaned_data['email']
-            content = form.cleaned_data['content']
+            message = form.cleaned_data['message']
 
-            html = render_to_string('contact/emails/contactform.html', {
+            html = render_to_string('contact/emails/contactform.html', 
+            {
                 'name': name,
                 'email': email,
-                'content': content
+                'message': message
             })
 
-            send_mail('The contact form subject', 'This is the message', 'noreply@codewithstein.com', ['codewithtestein@gmail.com'], html_message=html)
+            send_mail(
+                name,                                       #Subject
+                'Portfolio message from' + message,         #Message
+                email,                                      #From
+                ['wajahat2838@gmail.com'],                  #To
+                html_message=html,
+                )
 
             return redirect('index')
     else:
