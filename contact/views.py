@@ -19,7 +19,7 @@ def index(request):
                 'email': email,
                 'message': message
             })
-
+            
             send_mail(
                 name,                                       #Subject
                 'Portfolio message from' + message,         #Message
@@ -27,6 +27,7 @@ def index(request):
                 ['wajahat2838@gmail.com'],                  #To
                 html_message=html,
                 )
+        
 
             return redirect('index')
     else:
