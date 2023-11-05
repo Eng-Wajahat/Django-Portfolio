@@ -15,6 +15,10 @@ var typed = new Typed('.multiple-text', {
 //     navbar.classList.toggle('active');
 // };
 
+// menuIcon.onclick = function() {
+//     menuIcon.classList.toggle('bx-x');
+//     navbar.classList.toggle('active');
+// };
 
 
 

@@ -24,9 +24,9 @@
 
            
            
-            <a href="#skills" style="--i:3;" >Programming</a>
-            <a href="#portfolio" style="--i:4;" >Non-Programming</a>
-            <a href="#contact" style="--i:5;" >Contact</a>
+            <a href="#skills" style="--i:3;" >Skills</a>
+            <a href="#portfolio" style="--i:4;" >Projects</a>
+            {% comment %} <a href="#contact" style="--i:5;" >Contact</a> {% endcomment %}
         </nav>
     </header>
 
@@ -53,7 +53,7 @@
                     <a href="https://www.upwork.com/freel
                     ancers/~01102b606dfc6f78a0" target="_blank" style="--i:11"><i class='bx bx-group'></i></a>
                 </div>
-            <a href="static/files/Wajahat 2nd Print ver.pdf" class="btn" download>Download CV</a>
+            <a href="static/files/Wajahat-TextVer.pdf" class="btn" download>Download CV</a>
         </div>
 
 
@@ -61,7 +61,7 @@
     </section>
     
     <!-- 2nd Section -->
-
+    
     <section class="about" id="about">
         <div class="about-content">
             <h2 class="heading">Graduated <span>From</span></h2>
@@ -84,60 +84,63 @@
     <!-- 3rd Section -->
 
     <section class="skills" id="skills">
-        <h2 class="heading">Programming <span>Skills</span></h2>
-
+        <h2 class="heading">Technical <span>Skills</span></h2>
+        
         <div class="skills-container">
             <div class="skills-box">
+                <i class='bx bxs-lock-open' ></i>
+                <h3>Web Security</h3>
+                <p>I have learned alot from the books of 
+                    Marcus Pinto, Dafydd Stuttard, and how we can elevate the
+                    the security of Web Applications by going through this cheatbook.
+                    Now I know which entry points are common and which implementations 
+                    are neccessary as a Bare Minimun for a Web Application.</p>
+                    {% comment %} <a href="#" class="btn">Git Link</a> {% endcomment %}
+                </div>
+                
+                <div class="skills-box">
+                    <i class='bx bxl-django' ></i>
+                    <h3>Django Rest</h3>
+                    <p>I have done a number of Django practice projects, this web application is
+                        also built on top of Django. One of the reasons I chose to work on Django
+                        was that it is very easy to create a web application that runs on top of Django
+                        and because I shifted from php, I found Django's DOM structure even easier 
+                        to understand than Flask and Fast.
+                    </p>
+                        {% comment %} <a href="#" class="btn">Git Link</a> {% endcomment %}
+                </div>
+
+            <div class="skills-box">
                 <i class='bx bxl-flask' ></i>
-                <h3>Web Development</h3>
+                <h3>Flask Api</h3>
                 <p>Flask is for them who are new to python backend 
                     developmentFlask is a micro web framework written in Python. 
                     It is classified as a microframework because it does 
                     not require particular tools or libraries. It has no database 
                     abstraction layer</p>
-                    <a href="#" class="btn">Git Link</a>
+                    {% comment %} <a href="#" class="btn">Git Link</a> {% endcomment %}
             </div>
 
             
             <div class="skills-box">
-                <i class="bx bx-bar-chart-alt"></i>
-                <h3>Digital Marketing</h3>
+                <i class='bx bx-math'></i>
+                <h3>Statistics</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Amet similique illum magnam perspiciatis quisquam totam sed quaerat, 
                     exercitationem excepturi natus obcaecati a qui nisi maxime? 
                     Aliquam eaque beatae voluptates deserunt.</p>
-                    <a href="#" class="btn">Git Link</a>
+                    {% comment %} <a href="#" class="btn">Git Link</a> {% endcomment %}
                 </div>
                 
-                <div class="skills-box">
-                    <i class='bx bxl-django' ></i>
-                    <h3>Digital Marketing</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                        Amet similique illum magnam perspiciatis quisquam totam sed quaerat, 
-                        exercitationem excepturi natus obcaecati a qui nisi maxime? 
-                        Aliquam eaque beatae voluptates deserunt.</p>
-                        <a href="#" class="btn">Git Link</a>
-                    </div>
                     
-                <div class="skills-box">
-                    <i class='bx bxs-lock-open' ></i>
-                    <h3>Web Security</h3>
-                    <p>I have learned alot from the books of 
-                        Marcus Pinto, Dafydd Stuttard, and how we can elevate the
-                        the security of Web Applications by going through this cheatbook.
-                        Now I know which entry points are common and which implementations 
-                        are neccessary as a Bare Minimun for a Web Application.</p>
-                        {% comment %} <a href="#" class="btn">Git Link</a> {% endcomment %}
-                </div>
-                
             <div class="skills-box">
                 <i class='bx bxs-component'></i>
-                <h3>Digital Marketing</h3>
+                <h3>Numpy || Pandas</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Amet similique illum magnam perspiciatis quisquam totam sed quaerat, 
                     exercitationem excepturi natus obcaecati a qui nisi maxime? 
                     Aliquam eaque beatae voluptates deserunt.</p>
-                    <a href="#" class="btn">Git Link</a>
+                    {% comment %} <a href="#" class="btn">Git Link</a> {% endcomment %}
             </div>
         </div>
     </section>
@@ -217,7 +220,7 @@
 </section>
 
     <!-- 5th Section -->
-
+{% comment %} 
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
         
@@ -235,7 +238,7 @@
             <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
-    </section>
+    </section> {% endcomment %}
 
     <!-- Footer design -->
     
