@@ -7,18 +7,13 @@ var typed = new Typed('.multiple-text', {
 });
 
 
-// let menuIcon = document.querySelector('#menu-icon');
-// let navbar = document.querySelector('.navbar');
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
-// menuIcon.onclick = () => {
-//     menuIcon.classList.toggle('bx-x');
-//     navbar.classList.toggle('active');
-// };
-
-// menuIcon.onclick = function() {
-//     menuIcon.classList.toggle('bx-x');
-//     navbar.classList.toggle('active');
-// };
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx bx-menu');
+    navbar.classList.toggle('active');
+};
 
 
 
